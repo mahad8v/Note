@@ -9,19 +9,15 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Redux Toolkit with React & Typesript</h3>
 
   <p align="center">
     An awesome README template to jumpstart your projects!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://redux-toolkit.js.org/usage/usage-with-typescript"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+
   </p>
 </div>
 
@@ -30,10 +26,10 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
+      <a href="#about-the-project">Intro</a>
+      <!-- <ul> -->
+        <!-- <li><a href="#built-with">Built With</a></li> -->
+      <!-- </ul> -->
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -57,32 +53,36 @@
 
 [![Product Name Screen Shot][reduxtook-ts]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Redux Toolkit (RTK) is the official, recommended approach for using Redux, a popular state management library in JavaScript applications. It simplifies the process of setting up and managing Redux by providing utilities and abstractions that handle common tasks, reducing boilerplate code and making it easier to write robust and maintainable applications.
 
-Here's why:
+## Key Features of Redux Toolkit
 
-- Your time should be focused on creating something amazing. A project that solves a problem and helps others
-- You shouldn't be doing the same tasks over and over like creating a README from scratch
-- You should implement DRY principles to the rest of your life :smile:
+1. **Simplified Configuration**:
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+   - Provides a `configureStore` API that sets up the Redux store with sensible defaults (e.g., middleware and dev tools).
+
+2. **Immutability with Immer**:
+
+   - Uses Immer.js internally to allow "mutative" logic in reducers while maintaining immutability under the hood.
+
+3. **Built-in Middleware**:
+
+   - Automatically includes Redux Thunk for async logic.
+   - Allows easy addition of custom middleware.
+
+4. **Slice API**:
+
+   - The `createSlice` function simplifies defining reducers and actions.
+   - Automatically generates action creators and action types.
+
+5. **Integration with DevTools**:
+
+   - Easily integrates with Redux DevTools for debugging.
+
+6. **Utility Functions**:
+   - Includes utilities like `createAsyncThunk` for handling async actions and `createEntityAdapter` for managing normalized state.
 
 Use the `BLANK_README.md` to get started.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-- [![Next][Next.js]][Next-url]
-- [![React][React.js]][React-url]
-- [![Vue][Vue.js]][Vue-url]
-- [![Angular][Angular.io]][Angular-url]
-- [![Svelte][Svelte.dev]][Svelte-url]
-- [![Laravel][Laravel.com]][Laravel-url]
-- [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-- [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
